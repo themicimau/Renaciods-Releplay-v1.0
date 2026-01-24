@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Renacidos RP - [R N C]</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(circle at center, #700000, #000000);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 1200px;
+      width: 100%;
+      padding: 60px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .container:hover {
+      box-shadow: 0 0 60px rgba(119, 0, 0, 0.9);
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    h1 span {
+      color: #ff3232;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #e5e5e5;
+      max-width: 420px;
+      margin-bottom: 35px;
+    }
+
+    /* CONTENEDOR DE BOTONES */
+    .buttons {
+      position: relative;
+      width: 100%;
+      height: 220px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+      position: absolute;
+    }
+
+    /* POSICIONES */
+    .btn-descarga {
+      top: 0;
+      left: 0;
+    }
+
+    .btn-guia {
+      top: 60px;
+      left: 0;
+    }
+
+    .btn-vmp {
+      top: 0;
+      right: 0;
+    }
+
+    .btn-archivos {
+      top: 60px;
+      right: 0;
+    }
+
+    .btn-discord {
+      bottom: 0;
+      right: 0;
+    }
+
+    /* ESTILOS BOTONES */
+    .btn-primary {
+      background: linear-gradient(135deg, #700000, #4d0000);
+      padding: 14px 28px;
+      border-radius: 12px;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 0 25px rgb(70, 0, 0);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 35px rgb(70, 0, 0);
+    }
+
+    .btn-secondary {
+      padding: 14px 28px;
+      border-radius: 12px;
+      border: 1px solid #720000;
+      color: #ffffff;
+      text-decoration: none;
+      transition: background .2s ease, box-shadow .2s ease;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 50, 50, 0.15);
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+    }
+
+    .map {
+      display: flex;
+      justify-content: center;
+    }
+
+    .map img {
+      max-width: 420px;
+      width: 100%;
+      filter: drop-shadow(0 0 25px rgba(0,0,0,0.7));
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .buttons {
+        height: 260px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <h1>Bienvenido a <span>Renacidos Roleplay</span></h1>
+      <p>Bienvenido a la página web oficial de Renacidos RP.</p>
+
+      <div class="buttons">
+        <a href="https://cdn.discordapp.com/attachments/1445877369943363584/1450188637613457629/Launcher_RenacidosRP.zip?ex=69750b6a&is=6973b9ea&hm=da3e71f83e711191557a276586df9bc616b41bff409a5b58f15e1c098d50c80b&" class="btn-primary btn-descarga">⬇ Descargar</a>
+        <a href="#" class="btn-secondary btn-guia">Guía de instalación</a>
+        <a href="https://cdn.discordapp.com/attachments/1453994073412210799/1464080330498773176/VMP.exe?ex=69742a90&is=6972d910&hm=24a65a611af664aa9723646a50f693781d5207320e87ce50f36063a8b4569db3&" class="btn-secondary btn-vmp">Descargar VMP</a>
+        <a href="https://artes-de-gta5-vmp.vercel.app/" class="btn-secondary btn-archivos">Archivos del juego</a>
+        <a href="https://discord.gg/3VKxTaF2" class="btn-secondary btn-discord">Discord</a>
+      </div>
+    </div>
+
+    <div class="map">
+      <img src="[R N C].png" alt="Mapa del juego" />
+    </div>
+  </div>
+</body>
+</html>
